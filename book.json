@@ -1,0 +1,20 @@
+{
+    "title": "Kubernetes in 7 Days",
+    "description": "This book contains the content for the Packt Kubernetes in 7 Days video course.",
+    "author": "Des Drury",
+    "lang": "en",
+    "gitbook": ">= 3.2.0",
+    "plugins": [
+        "chapter-fold",
+        "back-to-top-button",
+        "-highlight",
+        "sunlight-highlighter"
+    ],
+    "pluginsConfig": {
+        "sunlight-highlighter": {
+            "theme": "dark",
+            "lineNumber": true
+        },
+        "chapter-fold": {}
+    }
+}
