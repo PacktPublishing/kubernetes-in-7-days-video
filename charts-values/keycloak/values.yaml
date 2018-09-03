@@ -1,0 +1,24 @@
+---
+keycloak:
+  ingress:
+    enabled: true
+    hosts:
+      - keycloak.192.168.26.11.nip.io
+    annotations:
+      kubernetes.io/ingress.class: nginx
+    tls:
+      - secretName: keycloak-tls
+        hosts:
+          - keycloak.192.168.26.11.nip.io
+
+  persistence:
+    deployPostgres: true
+    dbVendor: postgres
+    dbPassword: changeme
+
+postgresql:
+  persistence:
+    enabled: true
+    storageClass: rook-ceph-block
+    size: 2Gi
+  postgresPassword: changeme

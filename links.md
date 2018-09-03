@@ -12,6 +12,7 @@ This document has links to resources that will be useful for the _Kubernetes in 
 | [Kubernetes Glossary](https://kubernetes.io/docs/reference/glossary/) | Glossary of _Kubernetes_ terms. |
 | [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/) | Totorials for a number of Kubernetes aspects. |
 | [Kubernetes API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/) | Detailed information on the _Kubernetes _Resources. |
+| [Kubernetes Picking the Right Solution](https://kubernetes.io/docs/setup/pick-right-solution/) | Information about how to choose a Kubernetes cluster type. |
 | [kubectl Installation](https://kubernetes.io/docs/tasks/tools/install-kubectl/) | Instructions for how to install `kubectl`. |
 | [kubectl Overview](https://kubernetes.io/docs/reference/kubectl/overview/) | Overview information on `kubectl`. |
 | [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) | Summary information on useful `kubectl` commands. |

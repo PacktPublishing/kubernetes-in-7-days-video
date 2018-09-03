@@ -1,1 +1,18 @@
 ---
+rbac:
+  install: true
+
+Master:
+  Image:    jenkins/jenkins
+  ImageTag: 2.136
+  ServiceType: ClusterIP
+  HostName:    jenkins.192.168.26.11.nip.io
+
+  Ingress:
+    Annotations:
+      kubernetes.io/ingress.class: nginx
+
+Persistence:
+  Enabled: true
+  StorageClass: rook-ceph-block
+  Size: 2Gi

@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "dind.fullname" . }}
+  labels:
+    app: {{ template "dind.name" . }}
+    chart: {{ template "dind.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: docker
+      protocol: TCP
+      name: docker
+  selector:
+    app: {{ template "dind.name" . }}
+    release: {{ .Release.Name }}
